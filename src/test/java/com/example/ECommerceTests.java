@@ -50,7 +50,6 @@ public class ECommerceTests {
 
     @Test
     public void testRemoveFromCart() {
-        // Assume that addToCart is working correctly based on previous tests
         user.addToCart(product, 3);
         user.removeFromCart(product, 2);
         assertEquals(1, user.getCart().get(product).intValue());
